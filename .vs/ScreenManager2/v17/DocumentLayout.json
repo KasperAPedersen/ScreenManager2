@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\style.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\style.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\zbc23kaped\\source\\repos\\screenmanager2\\screenmanager2\\padder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\padder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Button.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Button.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Button.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Button.cs",
+              "RelativeToolTip": "ScreenManager2\\Button.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:57:56.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Style.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Style.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Style.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Style.cs",
+              "RelativeToolTip": "ScreenManager2\\Style.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA1wCMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:50:17.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Padder.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Padder.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Padder.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Padder.cs",
+              "RelativeToolTip": "ScreenManager2\\Padder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:37:15.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Label.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Label.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Label.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Label.cs",
+              "RelativeToolTip": "ScreenManager2\\Label.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:23:17.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Box.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Box.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Box.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Box.cs",
+              "RelativeToolTip": "ScreenManager2\\Box.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T11:04:52.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Object.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Object.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Object.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Object.cs",
+              "RelativeToolTip": "ScreenManager2\\Object.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAuwCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T09:15:48.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Program.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Program.cs",
+              "ToolTip": "C:\\Users\\zbc23kaped\\source\\repos\\ScreenManager2\\ScreenManager2\\Program.cs",
+              "RelativeToolTip": "ScreenManager2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T09:11:32.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
