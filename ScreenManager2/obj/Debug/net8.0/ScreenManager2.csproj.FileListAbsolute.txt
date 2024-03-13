@@ -12,3 +12,4 @@ C:\Users\zbc23kaped\source\repos\ScreenManager2\ScreenManager2\obj\Debug\net8.0\
 C:\Users\zbc23kaped\source\repos\ScreenManager2\ScreenManager2\obj\Debug\net8.0\ScreenManager2.pdb
 C:\Users\zbc23kaped\source\repos\ScreenManager2\ScreenManager2\obj\Debug\net8.0\ScreenManager2.genruntimeconfig.cache
 C:\Users\zbc23kaped\source\repos\ScreenManager2\ScreenManager2\obj\Debug\net8.0\ref\ScreenManager2.dll
+C:\Users\zbc23kaped\source\repos\ScreenManager2\ScreenManager2\obj\Debug\net8.0\ScreenManager2.sourcelink.json

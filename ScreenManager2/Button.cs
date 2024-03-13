@@ -10,18 +10,21 @@ namespace ScreenManager2
     {
         private readonly int currentHeight = 0;
 
-        public Button(string _text, Padding _padding, Dim? _dim = null, List<Styling>? _borderStyles = null, List<Styling>? _fontStyles = null, Colors? _color = null, Parent? _parent = null, Pos? _pos = null) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim ?? new Dim(0, 3))
+        public Button(string _text, Dim? _dim = null, List<object>? _styles = null, Parent? _parent = null, Pos? _pos = null) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim ?? new Dim(0, 3))
         {
             
             this.Pos = new Pos(this.Pos.X + this.Parent.Pos.X, this.Pos.Y + this.Parent.Pos.Y);
-            this.Dim = new Dim(_text.Length + ((int)_padding * 2) + 2, 3);
+            this.Dim = new Dim(_text.Length + 2, 3);
+            foreach(object o in Style.Get([typeof(Padding)], _styles))
+            {
+                this.Dim = new Dim(this.Dim.Width + ((int)o * 2), this.Dim.Height);
+            }
 
             if (this.Pos.X + this.Dim.Width > this.Parent.Dim.Width) this.Pos = new Pos(this.Parent.Pos.X + this.Parent.Dim.Width - this.Dim.Width - 2, this.Pos.Y);
 
-
-            Render(this.Pos, Color.Set(Style.Set($"{Border(Get.TopLeft)}{Aligner.Align(this.Dim.Width - 2, default, Border(Get.Horizontal), null)}{Border(Get.TopRight)}", _borderStyles), _color));
-            Render(new Pos(this.Pos.X, this.Pos.Y + ++currentHeight), Style.Set(Border(Get.Vertical), _borderStyles) + Style.Set(Color.Set(Padder.Set(_text, _padding), _color), _fontStyles) + Style.Set(Border(Get.Vertical), _borderStyles));
-            Render(new Pos(this.Pos.X, this.Pos.Y + ++currentHeight), Color.Set(Style.Set($"{Border(Get.BottomLeft)}{Aligner.Align(this.Dim.Width - 2, default, Border(Get.Horizontal), null)}{Border(Get.BottomRight)}", _borderStyles), _color));
+            Render(this.Pos, Style.Set($"{Border(Get.TopLeft)}{Aligner.Align(this.Dim.Width - 2, default, Border(Get.Horizontal), null)}{Border(Get.TopRight)}", Style.Get([typeof(BorderStyling), typeof(BorderBgColor), typeof(BorderColor)], _styles)));
+            Render(new Pos(this.Pos.X, this.Pos.Y + ++currentHeight), Style.Set(Border(Get.Vertical), Style.Get([typeof(BorderStyling), typeof(BorderBgColor), typeof(BorderColor)], _styles)) + Style.Set(Style.Set(_text, Style.Get([typeof(Padding)], _styles)), Style.Get([typeof(FontColor)], _styles)) + Style.Set(Border(Get.Vertical), Style.Get([typeof(BorderStyling), typeof(BorderBgColor), typeof(BorderColor)], _styles)));
+            Render(new Pos(this.Pos.X, this.Pos.Y + ++currentHeight), Style.Set($"{Border(Get.BottomLeft)}{Aligner.Align(this.Dim.Width - 2, default, Border(Get.Horizontal), null)}{Border(Get.BottomRight)}", Style.Get([typeof(BorderStyling), typeof(BorderBgColor), typeof(BorderColor)], _styles)));
 
         }
 
