@@ -43,9 +43,13 @@ namespace ScreenManager2
             Console.Write(_text);
         }
 
-        internal static void Remove()
+        internal static void Remove(Pos _pos, Dim _dim)
         {
-
+            for(int i = 0; i < _dim.Height; i++)
+            {
+                SetPos(new Pos(_pos.X, _pos.Y + i));
+                Console.Write(string.Concat(Enumerable.Repeat(" ", _dim.Width)));
+            }
         }
     }
 }
