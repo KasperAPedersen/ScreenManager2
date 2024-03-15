@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\style.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\style.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|c:\\users\\swooo\\documents\\github\\screenmanager2\\screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4915BA-6D68-4D41-B4BE-12923720CF58}|ScreenManager2\\ScreenManager2.csproj|solutionrelative:screenmanager2\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Style.cs",
-              "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Style.cs",
-              "RelativeDocumentMoniker": "ScreenManager2\\Style.cs",
-              "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Style.cs",
-              "RelativeToolTip": "ScreenManager2\\Style.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Table.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Table.cs",
+              "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Table.cs",
+              "RelativeToolTip": "ScreenManager2\\Table.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswCEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T13:27:12.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Box.cs",
-              "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Box.cs",
-              "RelativeDocumentMoniker": "ScreenManager2\\Box.cs",
-              "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Box.cs",
-              "RelativeToolTip": "ScreenManager2\\Box.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAADwvy4AAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T11:55:46.744Z",
+              "WhenOpened": "2024-03-15T13:54:20.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Box.cs",
+              "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Box.cs",
+              "RelativeDocumentMoniker": "ScreenManager2\\Box.cs",
+              "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Box.cs",
+              "RelativeToolTip": "ScreenManager2\\Box.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:55:46.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Object.cs",
               "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Object.cs",
               "RelativeDocumentMoniker": "ScreenManager2\\Object.cs",
               "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Object.cs",
               "RelativeToolTip": "ScreenManager2\\Object.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAUwCcAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T09:34:15.507Z"
+              "WhenOpened": "2024-03-13T09:34:15.507Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Program.cs",
               "RelativeDocumentMoniker": "ScreenManager2\\Program.cs",
               "ToolTip": "C:\\Users\\swooo\\Documents\\GitHub\\ScreenManager2\\ScreenManager2\\Program.cs",
               "RelativeToolTip": "ScreenManager2\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAABXAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T09:11:32.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T09:11:32.832Z"
             }
           ]
         }
