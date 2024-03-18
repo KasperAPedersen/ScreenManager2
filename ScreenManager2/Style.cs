@@ -40,6 +40,15 @@ namespace ScreenManager2
             return text;
         }
 
+        internal static int GetStylingLength(string _text)
+        {
+            foreach(char c in _text)
+            {
+                Console.WriteLine(c);
+            }
+            return 1;
+        }
+
         internal static List<object> Get(Type[] types = null, List<object> styles = null)
         {
             if (styles != null && types != null)

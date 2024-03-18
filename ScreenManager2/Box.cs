@@ -14,8 +14,8 @@ namespace ScreenManager2
         public Box(Dim _dim, List<object>? _styles = null, Parent? _parent = null, Pos? _pos = null) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim)
         {
             // Check width & height
-            if (this.Dim.Width + this.Pos.X >= this.Parent.Dim.Width) this.Dim = new(this.Parent.Dim.Width - this.Pos.X - 2, this.Dim.Height);
-            if (this.Dim.Height + this.Pos.Y >= this.Parent.Dim.Height) this.Dim = new(this.Dim.Width, this.Parent.Dim.Height - this.Pos.Y - 1);
+            if (this.Dim.Width + this.Pos.X >= this.Parent.Dim.Width) this.Dim = new(this.Parent.Dim.Width - this.Pos.X - Parent.Pos.X, this.Dim.Height);
+            if (this.Dim.Height + this.Pos.Y >= this.Parent.Dim.Height) this.Dim = new(this.Dim.Width, this.Parent.Dim.Height - this.Pos.Y - Parent.Pos.Y);
 
             this.Pos = new Pos(this.Pos.X + this.Parent.Pos.X, this.Pos.Y + this.Parent.Pos.Y);
 
