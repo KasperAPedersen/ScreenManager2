@@ -10,65 +10,79 @@ namespace ScreenManager2
 {
     struct TableItems()
     {
-        public List<string> headers = new List<string>();
-        public List<string[]> content = new List<string[]>();
+        public List<string> headers = [];
+        public List<string[]> content = [];
     }
 
     internal class Table : Object
     {
         TableItems Items = new();
-        private int currentHeight = 0, userID = 0, maxContentPerPage = 29;
-        public int active { get; set; } = 0;
-        public int activeSelect { get; set; } = 7;
-        public int currentPage { get; set; } = 1;
+        private int currentHeight = 0, userID = 0;
+        private readonly int maxContentPerPage = 29;
+        public int Active { get; set; } = 0;
+        public int ActiveSelect { get; set; } = 7;
+        public int CurrentPage { get; set; } = 1;
 
 
-        public Table(Dim _dim, List<object>? _styles, Parent? _parent, Pos? _pos) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim)
+        public Table(Dim _dim, Parent? _parent, Pos? _pos) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim)
         {
             if (Dim.Width + Pos.X >= Parent.Dim.Width) Dim = new Dim(Parent.Dim.Width - Parent.Pos.X + 1, Dim.Height);
             if (Dim.Height + Pos.Y >= Parent.Dim.Height) Dim = new Dim(Dim.Width, Parent.Dim.Height - Pos.Y);
             Pos = new Pos(Pos.X + Parent.Pos.X, Pos.Y + Parent.Pos.Y);
+
+            Update();
         }
 
-        public Table(Dim _dim, string[] _headers, List<object>? _styles, Parent? _parent, Pos? _pos) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim)
+        public Table(Dim _dim, string[] _headers, Parent? _parent, Pos? _pos) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim)
         {
             if (Dim.Width + Pos.X >= Parent.Dim.Width) Dim = new Dim(Parent.Dim.Width - Parent.Pos.X + 1, Dim.Height);
             if (Dim.Height + Pos.Y >= Parent.Dim.Height) Dim = new Dim(Dim.Width, Parent.Dim.Height - Pos.Y);
             Pos = new Pos(Pos.X + Parent.Pos.X, Pos.Y + Parent.Pos.Y);
-            
-            foreach(string s in _headers) Items.headers.Add(s);
 
-            Update(active);
+            foreach (string s in _headers) Items.headers.Add(s);
+
+            Update();
         }
 
-        internal void Update(int _active, int? _page = null)
+        internal void Update()
         {
-            if (_active != this.active)
-            {
-                this.active = _active > Items.content.Count - 1 ? 0 : (_active < 0 ? Items.content.Count - 1 : _active);
-            
-                if(active > currentPage * maxContentPerPage - 1)
-                {
-                    currentPage++;
-                } else if(active < maxContentPerPage * currentPage - maxContentPerPage)
-                {
-                    currentPage--;
-                }
-            }
-            
-            
-
             currentHeight = 0;
-            if (_page != null)
-            {
-                // TODO
-                currentPage = (int)_page;
-            }
             Remove(Pos, Dim);
 
             BuildHeader();
             BuildContent();
             BuildFooter();
+
+            Dim = new Dim(Dim.Width, currentHeight);
+        }
+
+        internal void Update(int _active)
+        {
+            int lastPage = Items.content.Count / maxContentPerPage + 1;
+            int nextPage = CurrentPage * maxContentPerPage;
+            int prevPage = nextPage - maxContentPerPage;
+
+            Active = _active > Items.content.Count - 1 ? Items.content.Count - 1 : (_active >= 0 ? _active : Active);
+            CurrentPage += Active >= nextPage ? (CurrentPage < lastPage ? 1 : 0) : (Active < prevPage && Active > 0 ? -1 : 0);
+
+            Update();
+
+        }
+
+        internal void Change()
+        {
+            switch(ActiveSelect)
+            {
+                case 7:
+                    Items.content.RemoveAt(Active);
+                    break;
+                case 8:
+                    // edit
+                    break;
+                default:
+                    break;
+            }
+            Update();
         }
 
         internal void BuildHeader()
@@ -126,12 +140,13 @@ namespace ScreenManager2
 
         internal void BuildContent()
         {
-            for (int i = (maxContentPerPage * currentPage) - maxContentPerPage; i < maxContentPerPage * currentPage; i++)
+            int firstPage = maxContentPerPage * CurrentPage - maxContentPerPage;
+            int nextPage = maxContentPerPage * CurrentPage;
+
+            for (int i = firstPage; i <= nextPage; i++)
             {
-                if (i < Items.content.Count)
+                if (i < Items.content.Count && i < nextPage)
                 {
-                    if (i > maxContentPerPage * currentPage - 1) return;
-                    
                     int fieldWidth = (Dim.Width - 2) / Items.headers.Count;
                     int fieldWidthRem = (Dim.Width - 2) % Items.headers.Count;
                     string tmp = Border(Get.Vertical);
@@ -145,8 +160,8 @@ namespace ScreenManager2
                         }
 
                         int activeTextLength = Style.Set(Items.content[i][o], [FontColor.red]).Length - Items.content[i][o].Length;
-                        string text = active == i && activeSelect == o ? $"> {Style.Set(Items.content[i][o], [FontColor.red])}" : Items.content[i][o];
-                        tmp += Aligner.Align(fieldWidth - 1 + (useRem ? 1 : 0) + (active == i && activeSelect == o ? activeTextLength : 0), Alignment.Center, " ", text);
+                        string text = Active == i && ActiveSelect == o ? $"> {Style.Set(Items.content[i][o], [FontColor.red])}" : Items.content[i][o];
+                        tmp += Aligner.Align(fieldWidth - 1 + (useRem ? 1 : 0) + (Active == i && ActiveSelect == o ? activeTextLength : 0), Alignment.Center, " ", text);
                         tmp += Border(Get.Vertical);
                     }
                     Render(new Pos(Pos.X, Pos.Y + currentHeight++), tmp);
@@ -174,7 +189,7 @@ namespace ScreenManager2
             }
             Render(new Pos(Pos.X, Pos.Y + currentHeight++), tmp);
 
-            tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, " ", $"Page: {currentPage} / {Items.content.Count / maxContentPerPage + 1}");
+            tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, " ", $"Page: {CurrentPage} / {(Items.content.Count - 1) / maxContentPerPage + 1} | Active: {Active}");
             Render(new Pos(Pos.X, Pos.Y + currentHeight++), Border(Get.Vertical) + tmp + Border(Get.Vertical));
 
             tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, Border(Get.Horizontal), default);
@@ -184,7 +199,7 @@ namespace ScreenManager2
         internal void AddHeader(string _text)
         {
             Items.headers.Add(_text);
-            Update(active);
+            Update();
         }
 
         internal void AddContent(string[] _text)
@@ -193,19 +208,19 @@ namespace ScreenManager2
 
             if(_text.Length < Items.headers.Count)
             {
-                List<string> tmp = new List<string>();
+                List<string> tmp = [];
                 int diff = Items.headers.Count - _text.Length - 1;
 
                 tmp.Add((++userID).ToString());
                 foreach(string s in _text) tmp.Add(s);
                 for (int i = 2; i < diff; i++) tmp.Add("");
 
-                tmp.Add("Edit");
                 tmp.Add("Slet");
+                tmp.Add("Edit");
 
                 Items.content.Add(tmp.ToArray());
             }
-            Update(active);
+            Update();
         }
 
         internal static string Border(Get _part)
