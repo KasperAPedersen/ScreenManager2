@@ -66,7 +66,6 @@ namespace ScreenManager2
             CurrentPage += Active >= nextPage ? (CurrentPage < lastPage ? 1 : 0) : (Active < prevPage && Active > 0 ? -1 : 0);
 
             Update();
-
         }
 
         internal void Change()
@@ -189,7 +188,7 @@ namespace ScreenManager2
             }
             Render(new Pos(Pos.X, Pos.Y + currentHeight++), tmp);
 
-            tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, " ", $"Page: {CurrentPage} / {(Items.content.Count - 1) / maxContentPerPage + 1} | Active: {Active}");
+            tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, " ", $"Page: {CurrentPage} / {(Items.content.Count - 1) / maxContentPerPage + 1} | Active: {Active + 1}");
             Render(new Pos(Pos.X, Pos.Y + currentHeight++), Border(Get.Vertical) + tmp + Border(Get.Vertical));
 
             tmp = Aligner.Align(Dim.Width - 3, Alignment.Center, Border(Get.Horizontal), default);

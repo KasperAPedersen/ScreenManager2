@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,7 @@ namespace ScreenManager2
     {
         public Parent Parent { get; set; } = _parent;
         public Pos Pos { get; set; } = _pos;
+
         public Dim Dim { get; set; } = _dim;
 
         public Parent SetParent { get { return new Parent(this.Pos, this.Dim); } }
@@ -39,8 +41,10 @@ namespace ScreenManager2
 
         internal static void Render(Pos _pos, string _text)
         {
+            Console.ForegroundColor = ConsoleColor.White;
             SetPos(_pos);
             Console.Write(_text);
+            Console.ForegroundColor = ConsoleColor.Black;
         }
 
         internal static void Remove(Pos _pos, Dim _dim)

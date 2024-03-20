@@ -12,7 +12,6 @@ namespace ScreenManager2
 
         public Button(string _text, Dim? _dim = null, List<object>? _styles = null, Parent? _parent = null, Pos? _pos = null) : base(_parent ?? new Parent(new Pos(0, 0), new Dim(Console.WindowWidth, Console.WindowHeight)), _pos ?? new Pos(2, 1), _dim ?? new Dim(0, 3))
         {
-            
             this.Pos = new Pos(this.Pos.X + this.Parent.Pos.X, this.Pos.Y + this.Parent.Pos.Y);
             this.Dim = new Dim(_text.Length + 2, 3);
             foreach(object o in Style.Get([typeof(Padding)], _styles))
